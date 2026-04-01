@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3XPRAND | Official Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* التنسيقات الأساسية - أبيض وأسود */
+        body {
+            background-color: #ffffff; /* خلفية بيضاء */
+            color: #000000; /* نص أسود */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* حاوية الموقع الرئيسية مع إطار أسود رفيع */
+        .site-wrapper {
+            max-width: 600px;
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000000; /* القالب الأسود الرفيع */
+            border-radius: 5px;
+        }
+
+        /* الترحيب */
+        .welcome-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .welcome-header h1 {
+            font-size: 28px;
+            letter-spacing: 3px;
+            margin-bottom: 5px;
+        }
+        .welcome-header p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* خانة الصورة الرئيسية */
+        .main-display-image {
+            width: 100%;
+            height: auto;
+            min-height: 250px;
+            border: 1px solid #000000;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .main-display-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* أزرار التواصل */
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .btn-insta {
+            background-color: #ff0000; /* أحمر كما طلبت */
+        }
+        .btn-wa {
+            background-color: #25D366; /* أخضر واتساب */
+        }
+        .btn i {
+            margin-left: 10px;
+        }
+
+        /* شبكة المنتجات (5 خانات) */
+        .products-showcase {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* تظهر صورتين في كل صف */
+            gap: 10px;
+        }
+        /* لجعل الصورة الخامسة تأخذ عرضاً كاملاً أو تنسيقاً مختلفاً */
+        .product-box {
+            border: 1px solid #000000;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+        .product-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-wrapper">
+        <div class="welcome-header">
+            <h1>H3XPRAND</h1>
+            <p>اهلا بكم مع H3XPRAND</p>
+        </div>
+
+        <div class="main-display-image">
+            <img src="main.jpg" alt="Main Display">
+        </div>
+
+        <div class="contact-links">
+            <a href="https://www.instagram.com/h3x.group?igsh=YzU3bmdlNTVzbzN4" class="btn btn-insta" target="_blank">
+                <i class="fab fa-instagram"></i> INSTAGRAM
+            </a>
+            <a href="https://wa.me/9647764646451" class="btn btn-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> WHATSAPP
+            </a>
+        </div>
+
+        <h2 style="text-align: center; font-size: 18px; border-bottom: 1px solid #000; padding-bottom: 5px;">PRODUCTS SHOWCASE</h2>
+        
+        <div class="products-showcase">
+            <div class="product-box">
+                <img src="1.jpg.jpg" alt="Product 1">
+            </div>
+            <div class="product-box">
+                <img src="2.jpg.jpg" alt="Product 2">
+            </div>
+            <div class="product-box">
+                <img src="3.jpg.jpg" alt="Product 3">
+            </div>
+            <div class="product-box">
+                <img src="4.jpg.jpg" alt="Product 4">
+            </div>
+            <div class="product-box" style="grid-column: span 2;"> <img src="5.jpg.jpg" alt="Product 5">
+            </div>
+        </div>
+
+        <div class="footer-text">
+            © 2024 H3XPRAND. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+</html>
